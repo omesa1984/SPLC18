@@ -17,18 +17,18 @@
 </script>
 </head>
 <body>
-	<!-- <img src="http://eguimaraes15.github.io//SBCARS/puc.png" alt="PUC-Rio"> 
+	<!-- <img src="https://marxviana.github.io//VAMOS/puc.png" alt="PUC-Rio"> 
 	
 	-->
     <img src="./VAMOS/logo/logo_puc.png" alt="PUC-Rio" height="85"
         width="65">
-	<img src="./VAMOS/logo/logo_ufsj.jpg" alt="UFSJ" height="170"
+	<img src="./VAMOS/logo/logo_ufsj.png" alt="UFSJ" height="170"
 		width="170">
 
 
 
 
-	<h1>Can Plug ins Impact on the Appearance of Vulnerabilities? An Exploratory Study of the Word Press</h1>
+	<h1>Can Plug-ins Impact on the Appearance of Vulnerabilities? An Exploratory Study of the Word Press</h1>
 
 	<p>
 		<strong>Authors:</strong>Oslien Mesa, Marx Viana, Elder Cirilo, Vinicius, ..., Carlos Lucena
@@ -72,50 +72,28 @@
 	</ol>
 
 	<div id="smells">
-		<h2>1. Code Anomalies and Architectural Problems</h2>
+		<h2>1. Types of Vulnerabilities</h2>
 
 		<p>
-			Code anomaly, <a
+			Vulnerability, <a
 				href="http://eguimaraes15.github.io/index.html#fowler">[1]</a>,
-			popularly known as a "code smell", is a micro-structure in the
-			program that represents a surface indication of a design problem. In
-			this study, we have focus on 10 types of code anomalies (see
-			Marinescu <a
+			 is a weakness which allows an attacker to reduce a system's information 
+			 assurance. Vulnerability is the intersection of three elements: a system 
+			 susceptibility or flaw, attacker access to the flaw, and attacker capability 
+			 to exploit the flaw <a
 				href="http://eguimaraes15.github.io/index.html#marinescu">[2]</a>).
 			We present the definition of the code anomalies following:
 
 		</p>
 		<div class="questions">
 			<blockquote>
-				<li><strong> Brain Class. </strong> Complex class that
+				<li><strong> SQL Injection. </strong> Complex class that
 					accumulates intelligence by brain methods</li>
 
-				<li><strong> Brain Method. </strong> Long and complex method
+				<li><strong> XSS. </strong> Long and complex method
 					that centralizes the intelligence of a class</li>
 
-				<li><strong> Data Class. </strong> Class that contains data but
-					not behavior related to the data</li>
-
-				<li><strong> Disperse Coupling. </strong> Method that calls one
-					or few methods of several classes</li>
-
-				<li><strong> Feature Envy. </strong> Method that calls more
-					methods of single external class that their</li>
-
-				<li><strong> God Class. </strong> Long and complex class that
-					centralizes the intelligence of the system</li>
-
-				<li><strong> Intensive Coupling. </strong> Method that calls
-					several methods that are implemented in one or few</li>
-
-				<li><strong> Refused Parent Bequest. </strong> Subclass that
-					does not use the protected methods of its superclass</li>
-
-				<li><strong> Shotgun Surgery. </strong> Method called by many
-					methods that are implemented in different classes</li>
-
-				<li><strong> Tradition Breaker. </strong> Subclass that does
-					not specialize the superclass</li>
+				
 			</blockquote>
 		</div>
 
@@ -135,21 +113,6 @@
 				<li><strong> Concern Overload. </strong> Component that is
 					responsible for realizing two or more unrelated system's concerns.
 				</li>
-
-				<li><strong> Connector Envy. </strong> Component that
-					encompasses extensive interaction-related functionality that should
-					be delegated to a connector.</li>
-
-				<li><strong> Cyclic Dependency. </strong> Components that
-					either directly or indirectly depend on each other to function
-					properly..</li>
-
-				<li><strong> Scattered Functionality. </strong> Multiple
-					components responsible for realizing the same high-level concern,
-					with some of them responsible for orthogonal concerns.</li>
-
-				<li><strong> Unused Interface. </strong> Interface that is
-					never used by external modules.</li>
 
 			</blockquote>
 
@@ -906,14 +869,14 @@
 		<div id="fullpaper">
 			<h2>7. Full Paper</h2>
 
-			The full paper submitted to the 13th Working IEEE/IFIP Conference on
-			Software Architecture (SBCARS'16) can be downloaded <a
-				href="http://eguimaraes15.github.io/SBCARS/files/wicsa2016-final3.pdf">here</a>.
+			The full paper submitted to the 12th International Workshop on Variability
+			 Modelling of Software-Intensive Systems (VAMOS'18) can be downloaded <a
+				href="http://marxviana.github.io/VAMOS/files/VEM2017-paper.pdf">here</a>.
 			<p>
 			<p>
-			Further readings about the paper accepted at the International Conference
-			on Software Engineering (ICSE'16) can be found here <a
-				href="http://eguimaraes15.github.io/SBCARS/files/icse2016-paper.pdf">here</a>.
+			Further readings about the paper accepted at the International V Workshop 
+			on Software Visualization, Evolution and Maintenance (VEM'17) can be found here <a
+				href="http://marxviana.github.io/VAMOS/files/VEM2017-paper.pdf">here</a>.
 
 		</div>
 
@@ -922,8 +885,8 @@
 			<p></p>
 			<ol>
 
-				<li id="fowler">M. Fowler. <i>Refactoring: Improving the
-						Design of Existing Code.</i> Addison-Wesley, Boston, MA, USA, 1999.
+				<li id="fowler">U.S. Air Force Software Protection Initiative<i>
+				The Three Tenets of Cyber Security.</i>Retrieved 2009-12-15.
 				</li>
 				<p>
 				<li id="marinescu">M. Marinescu. <i>Detecting Design Flaws
