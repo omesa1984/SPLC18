@@ -1,4 +1,4 @@
-
+﻿
 <html>
 <head>
 <meta http-equiv="Content-Type"
@@ -107,36 +107,286 @@
 				
 				<li><strong>  Multiple Unspecified Vulnerabilities (MUV): </strong> these are vulnerabilities of multiple and unspecified impact</li>
 				
-			</blockquote>
+			</blockquote>						
 		</div>
+		<p>
+		The types of vulnerabilities were identified by the description that each one presents in theNational Vulnerability Database (NVD) repository, the text is necessary for the description of the vulnerability and your registration in the repository. The most comprehensive descriptions mention the type of vulnerability, the plug-in where the vulnerability is located and even the files in which it was necessary to perform some operation to correct the vulnerability. In all the descriptions they identify the plug-ins where the vulnerability is presented, it is necesary data for our study and in which we will cover later. The poorer descriptions are limited to naming the plug-in, which is why we need to identify the vulnerability by the interpretation the text and parallel research in the bibliography related to the terms.
 
 		<div id="applications">
 			<h2>2. Most frequent Vulnerabilities caused by plug-ins in WordPress</h2>
-			<p>In order to conduct this study, we selected 4 target
-				applications as described in the following:
+			<p>After make a study by the vulnerabilities registered; we identify, group and account the vulnerabilities by type. We counted and studied 119 vulnerabilities, which we identified and defined briefly in the previous section. Untill the date, the most commonly reported vulnerabilities are of type XSS. Were registred 69 vulnerabilities, it is represented more than 50% of registered vulnerabilities. The second most frequent vulnerability is the SQL Injection, a total of 19 representing approximately 15%. The rest of types of vulnerabilities have a lower frequency of occurrence, does not reach 10% of occurrence but this does not detract from either importance or relevance because these characteristics depend on the severity of their impact and not on their frequency of occurrence.
 			
-			<img src="./VAMOS/logo/type_vulne.png" align="center" height="400" width="500">
-
+			<p>
+			The <i>Figure 1</i> and the <i>Table 1</i> showed the frequency of occurrence for each vulnerability.
+			<p>
+			<table>				
+				<tbody>
+					<tr>
+						<img src="./VAMOS/logo/type_vulne.png" align="center" height="300" width="350">
+					</tr>
+					<tr>
+						<th>Vulnerability</th>
+						<th>Quantity</th>
+						<th>Percent (%)</th>
+					</tr>
+					<tr>
+						<th>XSS</th>
+						<th>69</th>
+						<th>57,98 %</th>
+					</tr>
+					<tr>
+						<th>SQL Injection</th>
+						<th>19</th>
+						<th>15,96 %</th>
+					</tr>
+					<tr>
+						<th>Directory traversal</th>
+						<th>8</th>
+						<th>6,72 %</th>
+					</tr>
+					<tr>
+						<th>CSRF</th>
+						<th>7</th>
+						<th>5,82 %</th>
+					</tr>
+					<tr>
+						<th>PRF</th>
+						<th>7</th>
+						<th>5,82 %</th>
+					</tr>
+					<tr>
+						<th>Bypass</th>
+						<th>3</th>
+						<th>2,52 %</th>
+					</tr>
+					<tr>
+						<th>Open redirect</th>
+						<th>2</th>
+						<th>1,68 %</th>
+					</tr>
+					<tr>
+						<th>VETG</th>
+						<th>2</th>
+						<th>1,68 %</th>
+					</tr>
+					<tr>
+						<th>Information Disclosure</th>
+						<th>1</th>
+						<th>0,84 %</th>
+					</tr>
+					<tr>
+						<th>MUV</th>
+						<th>1</th>
+						<th>0,84 %</th>
+					</tr>
+				</tbody>
+				<caption>Table 1</caption>
+			</table>						
 		</div>
 
 		<div id="concerns">
 			<h2>3. Gravity of Vulnerabilities caused by plugins in WordPress</h2>
 
 			<p>
-				In order to better understand how code the relationship between code
-				anomalies and architectural problems, Tables 2 and 3 represents,
-				respectively: (i) <strong>single instances</strong> - number of code
-				anomalies only related with a problem; and (ii) <strong>agglomerations</strong>
-				- number of architectural problems related with agglomerations. The
-				results are represented, respectively, for the Health Watcher and
-				Mobile Media systems.
+				After identifying the different types of vulnerabilities registered in the NVD repository, we decided to find which one has the greatest impact on the integrity of the application by add of the plug-in. For the registry of each vulnerability in the NVD repository, the fields shown in <i>Table 2</i> are completed. These fields were used as metrics for vulnerability assessment:
+				
 			<p>
-			<img src="./VAMOS/logo/media_vulne.png" align="center" height="400" width="500">
-			
-			<p>
-				Resumen de la gravedad valorado por los porcentajes de ocurrencia
-			<p>
+		<div>
+			<blockquote>
+			<table class="tg" align="center">
+				<caption>Table 2</caption>
+				<tbody>
+					<tr>
+						<th class="tg-s6z2">Field</th>
+						<th class="tg-s6z2">CVSS 3.0</th>
+						<th class="tg-s6z2">CVSS 2.0</th>
+					</tr>
+					<tr>
+						<th class="tg-s6z2">Base Score</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>
+					<tr>
+						<th class="tg-s6z2">Impact Score</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Exploitability Score</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>	
+					<tr>
+						<th class="tg-s6z2">Attack Vector (AV)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Attack Complexity (AC)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Privileges Required (PR)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">User Interaction (UI)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Scope (S)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+					</tr>
+					<tr>
+						<th class="tg-s6z2">Authentication (Au)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Confidentiality (C)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Integrity (I)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>					
+					<tr>
+						<th class="tg-s6z2">Availability (A)</th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+					</tr>										
+				</tbody>
+			</table>				
+			</blockquote>						
+		</div>
+		<p>
+		The repository shows CVSS severity versions 2.0 and 3.0 vulnerability assessments. All the vulnerabilities present the evaluations by the metrics of the Version 2.0, and all those that were registered from the year 2017 are evaluated in addition by the Version 3.0. In many cases the quantitative results shown by the metrics show slight variations and in other cases the differences are greater. While qualitative assessments are different in many occasions. We understand that these variations are a result of the optimization in the applied metrics, the addition of new metrics or the division of some metrics in the version change.
+		
+		<p>
+		As expected, we found a great variety in the Base Score field, some as low as CVE-2013-4954 and CVE-2012-6527 that were evaluated by Low with a value of 2.6, both vulnerabilities are type XSS. We found the vulnerability CVE-2012-3576 that has the maximum Base Score (10.0) and was evaluated from High and is PRF type. Most of the vulnerabilities were evaluated from Medium <i>(Table 3 and Figure 2)</i>
+		
+		<blockquote>
+		<table class="tg" align="center">
+			<caption>Table 3</caption>
+			<tbody>
+				<tr>
+					<th class="tg-s6z2">Vulnerabilities</th>
+					<th class="tg-s6z2">119</th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2">Low</th>
+					<th class="tg-s6z2">4</th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2">Medium</th>
+					<th class="tg-s6z2">94</th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2">High</th>
+					<th class="tg-s6z2">21</th>
+				</tr>
+			</tbody>
+		</table>
+		<p>
 			<img src="./VAMOS/logo/por_cento_grav.png" align="center" height="200" width="300">
+		</blockquote>
+		
+		<p>
+		<i>Figure 2 shows the percentages of the vulnerabilities grouped by the evaluation of the Base Score field, while Table 3 shows the amounts.</i>
+		
+		<p>
+		Until this moment we appreciate that not being to find a vulnerability of little occurrence this must be ignored. The <i>Figure 3</i> shows how the <i>MUV</i> vulnerability has a single occurrence in the research carried out but was evaluated high, so that it has a high Score average, until this time the highest average.		
+						
+		<p>
+		Of the ten (10) types of vulnerabilities identified, four (4) of them have a high average impact on application integrity, caused by the addition of a plug-in. <i>MUV, PRF, CSRF, and SQL Injection</i> vulnerabilities maintain a <strong>Score</strong> average of <strong>7.0</strong> or higher; this leads to a wake-up call for developers to take care of the appearance of these vulnerabilities in their applications.
+		
+		<p>
+		For to calculate the average of the Score of the types of vulnerabilities, when we found the Score of CVSS 3.0 we despise the Score obtained of CVSS 2.0.
+		
+		<p>
+		We must emphasize that the type of vulnerability <i>XSS</i>, which has the highest frequency of occurrence, and is the lowest vulnerability. Its <strong>Score</strong> values are very stable and are evaluated from <strong>Medium</strong>, and on a few occasions from <strong>Low</strong>. The problem of vulnerabilities of type <i>XSS</i> is that they are very frequent, reason for they are the most looked for to realize the attacks. Its high frequency of appearance leads to constant care by the developers.
+		
+		<p>
+			<img src="./VAMOS/logo/media_vulne.png" align="center" height="300" width="400">
+						
+		<p>
+			To take a deeper approach to our study we decided to use the metrics related to our objective as indicated by the names and descriptions of each one. We had and in our favor consideration that may have been optimized during the change of version from CVSS 2.0 to CVSS 3.0, but were not restructured.
+			
+		<p>
+		<blockquote>
+			<li>Integrity (I)</li>
+			<li>Availability (A)</li>
+			<li>Confidentiality (C)</li>
+				
+		</blockquote>
+		
+		<p>
+		Of the one hundred nineteen (119) vulnerability descriptions analyzed, we observed  that in only ten (10) was evaluate as <strong>None</strong>, they are not significant compromise of the integrity of the web application. While in eight (8) the affectation was classified as <strong>Low</strong>. For the most part the developers reported the possibility of unrestricted access to some files or certain information of the web application, but in these cases the scope of what the attackers was assessed limited. Finally, we observed in two (2) of the vulnerabilities severely compromised the application while another one (1) completely compromised the integrity of the application.
+		
+		<p>
+		Analyzing the impact of the vulnerabilities in the availability of web applications, we observed that in only two (2) of the one hundred nineteen (119), that the developers considered the possibility of a compromise in the performance or <strong>High</strong> interruption in the available resources. Again we have one (1) that compromises the resources of the application in its entirety. Of the remaining only thirty-three (33) have a <strong>Partial</strong> risk of the resources of the applications, the rest does not presents risks.
+		
+		<p>
+		We analyze the field describing the complexity of the attack that must be performed to exploit the identified vulnerabilities without taking into account the attacker's experience. In this metric we noticed that in one (1) of the vulnerabilities the complexity of the attack to be carried out is very low (<strong>None</strong>) and another 49 were evaluated from <strong>Low</strong>. Again we find two (2) vulnerabilities that need a <strong>High</strong> level of knowledge of the atancante, while the rest were evaluated <strong>Medium<strong>.
+		
+		<blockquote>
+		<table class="tg" align="center">
+			<caption>Table 4</caption>
+			<tbody>
+				<tr>
+					<th class="tg-s6z2"><strong>Vulnerability</strong></th>
+					<th class="tg-s6z2"><strong>Base Score</strong></th>
+					<th class="tg-s6z2"><strong>Integrity (I)</strong></th>
+					<th class="tg-s6z2"><strong>Availability (A)</strong></th>
+					<th class="tg-s6z2"><strong>Confidentiality (C)</strong></th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2"><strong>CVE-2015-4697</strong></th>
+					<th class="tg-s6z2"><strong>8.8</strong></th>
+					<th class="tg-s6z2"><strong>High</strong></th>
+					<th class="tg-s6z2"><strong>High</strong></th>
+					<th class="tg-s6z2"><strong>Low</strong></th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2"><strong>CVE-2017-8099</strong></th>
+					<th class="tg-s6z2"><strong>8.1</strong></th>
+					<th class="tg-s6z2"><strong>High</strong></th>
+					<th class="tg-s6z2"><strong>High</strong></th>
+					<th class="tg-s6z2"><strong>None</strong></th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2"><strong>CVE-2012-3576</strong></th>
+					<th class="tg-s6z2"><strong>10.0</strong></th>
+					<th class="tg-s6z2"><strong>Complete</strong></th>
+					<th class="tg-s6z2"><strong>Complete</strong></th>
+					<th class="tg-s6z2"><strong>Low</strong></th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2"><strong>CVE-2013-4954</strong></th>
+					<th class="tg-s6z2"><strong>2.6</strong></th>
+					<th class="tg-s6z2"><strong>Partial</strong></th>
+					<th class="tg-s6z2"><strong>None</strong></th>
+					<th class="tg-s6z2"><strong>High</strong></th>
+				</tr>
+				<tr>
+					<th class="tg-s6z2"><strong>CVE-2012-6527</strong></th>
+					<th class="tg-s6z2"><strong>2.6</strong></th>
+					<th class="tg-s6z2"><strong>Partial</strong></th>
+					<th class="tg-s6z2"><strong>None</strong></th>
+					<th class="tg-s6z2"><strong>High</strong></th>
+				</tr>
+			</tbody>
+		</table>
+		</blockquote>
+		
+		<p>
+		The <i>Table 4</i> compiles the most significant data, mentioned above, to facilitate the understanding of the partial conclusions. The fields <strong>Integrity</strong> and <strong>Availability</strong> are correlated. It is easy to see that the evaluations of the fields <strong>Integrity</strong> and <strong>Availability</strong> are directly proportional to the field <strong>Base Score</strong>, while the field <strong>Confidentiality</strong> is inversely proportional. As the level of amemaza of the integrity of the application increases, the lack of security in the access to the resources that guarantee the operation of the application increases. The increase of these fields degrades the confidentiality of the application. In the rest of the vulnerabilities these fields present the same relation and behavior. Up to this point we can conclude that the fields <strong>Integrity</strong>, <strong>Availability<,strong> and <strong>Confidentiality</strong> have direct influence in the field <strong>Base Score</strong>.
 
 		</div>		
 		<div id="concerns">
