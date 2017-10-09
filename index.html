@@ -39,7 +39,7 @@
 	<div>
 		This web page presents the supplementary material of the paper <i>Identifying
 			the types of vulnerabilities that can be explode by  attackers</i>, which
-		has been submitted to the 12th International Workshop on Variability Modelling 
+		has been submitted to the 12td International Workshop on Variability Modelling 
 		of Software-Intensive Systems(VAMOS'18). Complementary information regarding
 		the paper is divided among the sections following:
 	</div>
@@ -64,7 +64,7 @@
 				containing all the information used in the data analysis (e.g.
 				concerns, scenarios).</li>
 			<li><a href="http://eguimaraes15.github.io/index.html#fullpaper">Full
-					Paper</a>: presents the link to download a file with the full text of
+					Paper</a>: presents the link to download a file witd the full text of
 				this paper.</li>
 		</blockquote>
 
@@ -91,13 +91,13 @@
 					
 				<li><strong> SQL Injection: </strong> the attacker takes advantage of the lack of data validation and execute SQL queries from the components client's writing</li>
 				
-				<li><strong> Directory traversal: </strong> with the existence of a correct code takes advantage of the lack of security (or validation) in the permissions of the roles of users</li>
+				<li><strong> Directory traversal: </strong> witd the existence of a correct code takes advantage of the lack of security (or validation) in the permissions of the roles of users</li>
 				
 				<li><strong> CSRF (Cross-site Request Forgery): </strong> the attackers abuses the trust of website on the users and use the permissions of them for the attack</li>
 				
-				<li><strong> Bypass: </strong> the attacker takes advantage of alternate access path by the developers or flaws in the design of the website</li>
+				<li><strong> Bypass: </strong> the attacker takes advantage of alternate access patd by the developers or flaws in the design of the website</li>
 				
-				<li><strong> Parameter Remote File (PRF): </strong> occurs when the website allows the execute written codes in uploaded files, or stored in shared paths with website</li>
+				<li><strong> Parameter Remote File (PRF): </strong> occurs when the website allows the execute written codes in uploaded files, or stored in shared paths witd website</li>
 				
 				<li><strong> Open redirect: </strong> it allows the attackers to redirect users to arbitrary websites while execute phishing attacks</li>
 				
@@ -117,73 +117,85 @@
 			<p>After make a study by the vulnerabilities registered; we identify, group and account the vulnerabilities by type. We counted and studied 119 vulnerabilities, which we identified and defined briefly in the previous section. Untill the date, the most commonly reported vulnerabilities are of type XSS. Were registred 69 vulnerabilities, it is represented more than 50% of registered vulnerabilities. The second most frequent vulnerability is the SQL Injection, a total of 19 representing approximately 15%. The rest of types of vulnerabilities have a lower frequency of occurrence, does not reach 10% of occurrence but this does not detract from either importance or relevance because these characteristics depend on the severity of their impact and not on their frequency of occurrence.
 			
 			<p>
+			<table align="center">
+				<td>
+					<table>
+						<td>
+							<p align="left">
+			<img src="./VAMOS/logo/type_vulne.png" align="center" height="300" width="350">
+						</td>
+					</table>
+					<p align="center">
+					<i>Figure 1</i>
+				</td>
+				<td>
+					<p>
+					<table class="tg">				
+						<tbody>
+							<tr>
+								<td class="tg-s6z2"><strong>Vulnerability</strong></td>
+								<td class="tg-s6z2"><strong>Quantity</strong></td>
+								<td class="tg-s6z2"><strong>Percent (%)</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>XSS</strong></td>
+								<td class="tg-s6z2"><strong>69</strong></td>
+								<td class="tg-s6z2"><strong>57,98 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>SQL Injection</strong></td>
+								<td class="tg-s6z2"><strong>19</strong></td>
+								<td class="tg-s6z2"><strong>15,96 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>Directory traversal</strong></td>
+								<td class="tg-s6z2"><strong>8</strong></td>
+								<td class="tg-s6z2"><strong>6,72 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>CSRF</strong></td>
+								<td class="tg-s6z2"><strong>7</strong></td>
+								<td class="tg-s6z2"><strong>5,82 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>PRF</strong></td>
+								<td class="tg-s6z2"><strong>7</strong></td>
+								<td class="tg-s6z2"><strong>5,82 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>Bypass</strong></td>
+								<td class="tg-s6z2"><strong>3</strong></td>
+								<td class="tg-s6z2"><strong>2,52 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>Open redirect</strong></td>
+								<td class="tg-s6z2"><strong>2</strong></td>
+								<td class="tg-s6z2"><strong>1,68 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>VETG</strong></td>
+								<td class="tg-s6z2"><strong>2</strong></td>
+								<td class="tg-s6z2"><strong>1,68 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>Information Disclosure</strong></td>
+								<td class="tg-s6z2"><strong>1</strong></td>
+								<td class="tg-s6z2"<strong>>0,84 %</strong></td>
+							</tr>
+							<tr>
+								<td class="tg-s6z2"><strong>MUV</strong></td>
+								<td class="tg-s6z2"><strong>1</strong></td>
+								<td class="tg-s6z2"><strong>0,84 %</strong></td>
+							</tr>
+						</tbody>
+					</table>
+					<p align="center">
+					<i>Table 1</i>
+				</td>
+			</table>
+		<p>
 			The <i>Figure 1</i> and the <i>Table 1</i> showed the frequency of occurrence for each vulnerability.
-			<p>
-			<table>				
-				<tbody>
-					<tr>
-						<img src="./VAMOS/logo/type_vulne.png" align="center" height="300" width="350">
-					</tr>
-					<tr>
-						<th>Vulnerability</th>
-						<th>Quantity</th>
-						<th>Percent (%)</th>
-					</tr>
-					<tr>
-						<th>XSS</th>
-						<th>69</th>
-						<th>57,98 %</th>
-					</tr>
-					<tr>
-						<th>SQL Injection</th>
-						<th>19</th>
-						<th>15,96 %</th>
-					</tr>
-					<tr>
-						<th>Directory traversal</th>
-						<th>8</th>
-						<th>6,72 %</th>
-					</tr>
-					<tr>
-						<th>CSRF</th>
-						<th>7</th>
-						<th>5,82 %</th>
-					</tr>
-					<tr>
-						<th>PRF</th>
-						<th>7</th>
-						<th>5,82 %</th>
-					</tr>
-					<tr>
-						<th>Bypass</th>
-						<th>3</th>
-						<th>2,52 %</th>
-					</tr>
-					<tr>
-						<th>Open redirect</th>
-						<th>2</th>
-						<th>1,68 %</th>
-					</tr>
-					<tr>
-						<th>VETG</th>
-						<th>2</th>
-						<th>1,68 %</th>
-					</tr>
-					<tr>
-						<th>Information Disclosure</th>
-						<th>1</th>
-						<th>0,84 %</th>
-					</tr>
-					<tr>
-						<th>MUV</th>
-						<th>1</th>
-						<th>0,84 %</th>
-					</tr>
-				</tbody>
-				<caption>Table 1</caption>
-			</table>						
-		</div>
-
+		
 		<div id="concerns">
 			<h2>3. Gravity of Vulnerabilities caused by plugins in WordPress</h2>
 
@@ -194,112 +206,127 @@
 		<div>
 			<blockquote>
 			<table class="tg" align="center">
-				<caption>Table 2</caption>
 				<tbody>
 					<tr>
-						<th class="tg-s6z2">Field</th>
-						<th class="tg-s6z2">CVSS 3.0</th>
-						<th class="tg-s6z2">CVSS 2.0</th>
+						<td class="tg-s6z2"><strong>Field</strong></td>
+						<td class="tg-s6z2"><strong>CVSS 3.0</strong></td>
+						<td class="tg-s6z2"><strong>CVSS 2.0</strong></td>
 					</tr>
 					<tr>
-						<th class="tg-s6z2">Base Score</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Base Score</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>
 					<tr>
-						<th class="tg-s6z2">Impact Score</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Impact Score</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Exploitability Score</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Exploitability Score</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>	
 					<tr>
-						<th class="tg-s6z2">Attack Vector (AV)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Attack Vector (AV)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Attack Complexity (AC)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Attack Complexity (AC)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Privileges Required (PR)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Privileges Required (PR)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">User Interaction (UI)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>User Interaction (UI)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Scope (S)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Scope (S)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></td>
 					</tr>
 					<tr>
-						<th class="tg-s6z2">Authentication (Au)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Authentication (Au)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/uncheck.png" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Confidentiality (C)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Confidentiality (C)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Integrity (I)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Integrity (I)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>					
 					<tr>
-						<th class="tg-s6z2">Availability (A)</th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
-						<th class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></th>
+						<td class="tg-s6z2"><strong>Availability (A)</strong></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
+						<td class="tg-s6z2"><img src="./VAMOS/logo/checked-g.gif" align="center" height="15" width="15"></td>
 					</tr>										
 				</tbody>
-			</table>				
+			</table>
+			<p align="center">
+			<caption><i>Table 2</i></caption>
 			</blockquote>						
 		</div>
 		<p>
 		The repository shows CVSS severity versions 2.0 and 3.0 vulnerability assessments. All the vulnerabilities present the evaluations by the metrics of the Version 2.0, and all those that were registered from the year 2017 are evaluated in addition by the Version 3.0. In many cases the quantitative results shown by the metrics show slight variations and in other cases the differences are greater. While qualitative assessments are different in many occasions. We understand that these variations are a result of the optimization in the applied metrics, the addition of new metrics or the division of some metrics in the version change.
 		
 		<p>
-		As expected, we found a great variety in the Base Score field, some as low as CVE-2013-4954 and CVE-2012-6527 that were evaluated by Low with a value of 2.6, both vulnerabilities are type XSS. We found the vulnerability CVE-2012-3576 that has the maximum Base Score (10.0) and was evaluated from High and is PRF type. Most of the vulnerabilities were evaluated from Medium <i>(Table 3 and Figure 2)</i>
+		As expected, we found a great variety in the Base Score field, some as low as CVE-2013-4954 and CVE-2012-6527 that were evaluated by Low witd a value of 2.6, botd vulnerabilities are type XSS. We found the vulnerability CVE-2012-3576 that has the maximum Base Score (10.0) and was evaluated from High and is PRF type. Most of the vulnerabilities were evaluated from Medium <i>(Table 3 and Figure 2)</i>
 		
 		<blockquote>
-		<table class="tg" align="center">
-			<caption>Table 3</caption>
-			<tbody>
+		<table align="center">
+			<td>
+				<table class="tg" align="center">
+				<tbody>
+					<tr>
+						<td class="tg-s6z2"><strong>Vulnerabilities</strong></td>
+						<td class="tg-s6z2"><strong>119</strong></td>
+					</tr>
+					<tr>
+						<td class="tg-s6z2"><strong>Low</strong></td>
+						<td class="tg-s6z2"><strong>4</strong></td>
+					</tr>
+					<tr>
+						<td class="tg-s6z2"><strong>Medium</strong></td>
+						<td class="tg-s6z2"><strong>94</strong></td>
+					</tr>
+					<tr>
+						<td class="tg-s6z2"><strong>High</strong></td>
+						<td class="tg-s6z2"><strong>21</strong></td>
+					</tr>
+				</tbody>			
+				</table>
+				<p align="center">
+				<i>Table 3</i>
+			</td>
+			<td>
+				<table align="center">
 				<tr>
-					<th class="tg-s6z2">Vulnerabilities</th>
-					<th class="tg-s6z2">119</th>
+					<td>
+						<img src="./VAMOS/logo/por_cento_grav.png" align="center" height="200" width="300">
+						<p align="center">
+						<i>Figure 2</i>
+					</td>
 				</tr>
-				<tr>
-					<th class="tg-s6z2">Low</th>
-					<th class="tg-s6z2">4</th>
-				</tr>
-				<tr>
-					<th class="tg-s6z2">Medium</th>
-					<th class="tg-s6z2">94</th>
-				</tr>
-				<tr>
-					<th class="tg-s6z2">High</th>
-					<th class="tg-s6z2">21</th>
-				</tr>
-			</tbody>
+				</table>
+			</td>
 		</table>
-		<p>
-			<img src="./VAMOS/logo/por_cento_grav.png" align="center" height="200" width="300">
+		<p align="center">
+		<i>Table 3 and Figure 2. The Figure 2 shows the percentages of the vulnerabilities grouped by the evaluation of the Base Score field, while Table 3 shows the amounts.</i>
+
 		</blockquote>
-		
-		<p>
-		<i>Figure 2 shows the percentages of the vulnerabilities grouped by the evaluation of the Base Score field, while Table 3 shows the amounts.</i>
-		
+				
 		<p>
 		Until this moment we appreciate that not being to find a vulnerability of little occurrence this must be ignored. The <i>Figure 3</i> shows how the <i>MUV</i> vulnerability has a single occurrence in the research carried out but was evaluated high, so that it has a high Score average, until this time the highest average.		
 						
@@ -310,11 +337,13 @@
 		For to calculate the average of the Score of the types of vulnerabilities, when we found the Score of CVSS 3.0 we despise the Score obtained of CVSS 2.0.
 		
 		<p>
-		We must emphasize that the type of vulnerability <i>XSS</i>, which has the highest frequency of occurrence, and is the lowest vulnerability. Its <strong>Score</strong> values are very stable and are evaluated from <strong>Medium</strong>, and on a few occasions from <strong>Low</strong>. The problem of vulnerabilities of type <i>XSS</i> is that they are very frequent, reason for they are the most looked for to realize the attacks. Its high frequency of appearance leads to constant care by the developers.
+		We must emphasize that the type of vulnerability <i>XSS</i>, which has the highest frequency of occurrence, and is the lowest vulnerability. Its <strong>Score</strong> values are very stable and are evaluated from <strong>Medium</strong>, and on a few occasions from <strong>Low</strong>. The problem of vulnerabilities of type <i>XSS</i> is that they are very frequent, reason for they are the most looked for to realize the attacks. Its high frequency of appearance leads to constant care by the developers <i>Figure 3</i>.
 		
-		<p>
+		<p align="center">
 			<img src="./VAMOS/logo/media_vulne.png" align="center" height="300" width="400">
-						
+		<p align="center">
+			<caption><i>Figure 3</i></caption>
+		
 		<p>
 			To take a deeper approach to our study we decided to use the metrics related to our objective as indicated by the names and descriptions of each one. We had and in our favor consideration that may have been optimized during the change of version from CVSS 2.0 to CVSS 3.0, but were not restructured.
 			
@@ -333,60 +362,61 @@
 		Analyzing the impact of the vulnerabilities in the availability of web applications, we observed that in only two (2) of the one hundred nineteen (119), that the developers considered the possibility of a compromise in the performance or <strong>High</strong> interruption in the available resources. Again we have one (1) that compromises the resources of the application in its entirety. Of the remaining only thirty-three (33) have a <strong>Partial</strong> risk of the resources of the applications, the rest does not presents risks.
 		
 		<p>
-		We analyze the field describing the complexity of the attack that must be performed to exploit the identified vulnerabilities without taking into account the attacker's experience. In this metric we noticed that in one (1) of the vulnerabilities the complexity of the attack to be carried out is very low (<strong>None</strong>) and another 49 were evaluated from <strong>Low</strong>. Again we find two (2) vulnerabilities that need a <strong>High</strong> level of knowledge of the atancante, while the rest were evaluated <strong>Medium<strong>.
+		We analyze the field describing the complexity of the attack that must be performed to exploit the identified vulnerabilities without taking into account the attacker's experience. In this metric we noticed that in one (1) of the vulnerabilities the complexity of the attack to be carried out is very low (<strong>None</strong>) and another 49 were evaluated from <strong>Low</strong>. Again we find two (2) vulnerabilities that need a <strong>High</strong> level of knowledge of the atancante, while the rest were evaluated <strong>Medium</strong>.
 		
 		<blockquote>
 		<table class="tg" align="center">
-			<caption>Table 4</caption>
 			<tbody>
 				<tr>
-					<th class="tg-s6z2"><strong>Vulnerability</strong></th>
-					<th class="tg-s6z2"><strong>Base Score</strong></th>
-					<th class="tg-s6z2"><strong>Integrity (I)</strong></th>
-					<th class="tg-s6z2"><strong>Availability (A)</strong></th>
-					<th class="tg-s6z2"><strong>Confidentiality (C)</strong></th>
+					<td class="tg-s6z2"><strong>Vulnerability</strong></td>
+					<td class="tg-s6z2"><strong>Base Score</strong></td>
+					<td class="tg-s6z2"><strong>Integrity (I)</strong></td>
+					<td class="tg-s6z2"><strong>Availability (A)</strong></td>
+					<td class="tg-s6z2"><strong>Confidentiality (C)</strong></td>
 				</tr>
 				<tr>
-					<th class="tg-s6z2"><strong>CVE-2015-4697</strong></th>
-					<th class="tg-s6z2"><strong>8.8</strong></th>
-					<th class="tg-s6z2"><strong>High</strong></th>
-					<th class="tg-s6z2"><strong>High</strong></th>
-					<th class="tg-s6z2"><strong>Low</strong></th>
+					<td class="tg-s6z2"><strong>CVE-2015-4697</strong></td>
+					<td class="tg-s6z2"><strong>8.8</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>Low</strong></td>
 				</tr>
 				<tr>
-					<th class="tg-s6z2"><strong>CVE-2017-8099</strong></th>
-					<th class="tg-s6z2"><strong>8.1</strong></th>
-					<th class="tg-s6z2"><strong>High</strong></th>
-					<th class="tg-s6z2"><strong>High</strong></th>
-					<th class="tg-s6z2"><strong>None</strong></th>
+					<td class="tg-s6z2"><strong>CVE-2017-8099</strong></td>
+					<td class="tg-s6z2"><strong>8.1</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>None</strong></td>
 				</tr>
 				<tr>
-					<th class="tg-s6z2"><strong>CVE-2012-3576</strong></th>
-					<th class="tg-s6z2"><strong>10.0</strong></th>
-					<th class="tg-s6z2"><strong>Complete</strong></th>
-					<th class="tg-s6z2"><strong>Complete</strong></th>
-					<th class="tg-s6z2"><strong>Low</strong></th>
+					<td class="tg-s6z2"><strong>CVE-2012-3576</strong></td>
+					<td class="tg-s6z2"><strong>10.0</strong></td>
+					<td class="tg-s6z2"><strong>Complete</strong></td>
+					<td class="tg-s6z2"><strong>Complete</strong></td>
+					<td class="tg-s6z2"><strong>Low</strong></td>
 				</tr>
 				<tr>
-					<th class="tg-s6z2"><strong>CVE-2013-4954</strong></th>
-					<th class="tg-s6z2"><strong>2.6</strong></th>
-					<th class="tg-s6z2"><strong>Partial</strong></th>
-					<th class="tg-s6z2"><strong>None</strong></th>
-					<th class="tg-s6z2"><strong>High</strong></th>
+					<td class="tg-s6z2"><strong>CVE-2013-4954</strong></td>
+					<td class="tg-s6z2"><strong>2.6</strong></td>
+					<td class="tg-s6z2"><strong>Partial</strong></td>
+					<td class="tg-s6z2"><strong>None</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
 				</tr>
 				<tr>
-					<th class="tg-s6z2"><strong>CVE-2012-6527</strong></th>
-					<th class="tg-s6z2"><strong>2.6</strong></th>
-					<th class="tg-s6z2"><strong>Partial</strong></th>
-					<th class="tg-s6z2"><strong>None</strong></th>
-					<th class="tg-s6z2"><strong>High</strong></th>
+					<td class="tg-s6z2"><strong>CVE-2012-6527</strong></td>
+					<td class="tg-s6z2"><strong>2.6</strong></td>
+					<td class="tg-s6z2"><strong>Partial</strong></td>
+					<td class="tg-s6z2"><strong>None</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
 				</tr>
 			</tbody>
 		</table>
+		<p align="center">
+			<caption><i>Table 4</i></caption>
 		</blockquote>
 		
 		<p>
-		The <i>Table 4</i> compiles the most significant data, mentioned above, to facilitate the understanding of the partial conclusions. The fields <strong>Integrity</strong> and <strong>Availability</strong> are correlated. It is easy to see that the evaluations of the fields <strong>Integrity</strong> and <strong>Availability</strong> are directly proportional to the field <strong>Base Score</strong>, while the field <strong>Confidentiality</strong> is inversely proportional. As the level of amemaza of the integrity of the application increases, the lack of security in the access to the resources that guarantee the operation of the application increases. The increase of these fields degrades the confidentiality of the application. In the rest of the vulnerabilities these fields present the same relation and behavior. Up to this point we can conclude that the fields <strong>Integrity</strong>, <strong>Availability<,strong> and <strong>Confidentiality</strong> have direct influence in the field <strong>Base Score</strong>.
+		The <i>Table 4</i> compiles the most significant data, mentioned above, to facilitate the understanding of the partial conclusions. The fields <strong>Integrity</strong> and <strong>Availability</strong> are correlated. It is easy to see that the evaluations of the fields <strong>Integrity</strong> and <strong>Availability</strong> are directly proportional to the field <strong>Base Score</strong>, while the field <strong>Confidentiality</strong> is inversely proportional. As the level of amemaza of the integrity of the application increases, the lack of security in the access to the resources that guarantee the operation of the application increases. The increase of these fields degrades the confidentiality of the application. In the rest of the vulnerabilities these fields present the same relation and behavior. Up to this point we can conclude that the fields <strong>Integrity</strong>, <strong>Availability</strong> and <strong>Confidentiality</strong> have direct influence in the field <strong>Base Score</strong>.
 
 		</div>		
 		<div id="concerns">
@@ -397,12 +427,12 @@ relação às vulnerabilidades introduzidas por plug-ins?</h2>
 				In order to better understand how code the relationship between code
 				anomalies and architectural problems, Tables 2 and 3 represents,
 				respectively: (i) <strong>single instances</strong> - number of code
-				anomalies only related with a problem; and (ii) <strong>agglomerations</strong>
-				- number of architectural problems related with agglomerations. The
-				results are represented, respectively, for the Health Watcher and
+				anomalies only related witd a problem; and (ii) <strong>agglomerations</strong>
+				- number of architectural problems related witd agglomerations. The
+				results are represented, respectively, for the Healtd Watcher and
 				Mobile Media systems.
 			<p>
-				<!-- Table - Health Watcher -->
+				<!-- Table - Healtd Watcher -->
 			
 
 		</div>
@@ -410,88 +440,120 @@ relação às vulnerabilidades introduzidas por plug-ins?</h2>
 			<h2>5. Effort needed to correct vulnerability caused by wordpress plug-ins</h2>
 
 			<p>
-				In order to better understand how code the relationship between code
-				anomalies and architectural problems, Tables 2 and 3 represents,
-				respectively: (i) <strong>single instances</strong> - number of code
-				anomalies only related with a problem; and (ii) <strong>agglomerations</strong>
-				- number of architectural problems related with agglomerations. The
-				results are represented, respectively, for the Health Watcher and
-				Mobile Media systems.
+			In another of the metrics we have an idea of the effort that the developers must make to solve a vulnerability caused by the addition of a plug-ins. To solve the one hundred nineteen (119) vulnerabilities studied it was necessary to work witd a total of 7397 as reflected in <i>Table 5</i>. The <i>Table 5</i> shows the total number of files that needed to be <strong>Added</strong>, <strong>Deleted</strong> or <strong>Edited</strong> to resolve the vulnerability. The column <strong>Used</strong> is associated only to the <strong>Edited</strong> column, since in the cases of the modified files the repository shows the modifications that were made. As you can see in the column <strong>Used</strong> only those files related directly to the vulnerability correction were counted.
+			
+			<p>
+			As our study is aimed at the vulnerabilities produced by the addition of WordPress plug-ins, in a file containing PHP codes, we independently count the files witd <i>PHP</i>, <i>JS</i> and <i>HTML</i> extension that were used in the correction process. All percent data shown in <i>Table 5</i> were calculated using as one hundred percent, the total of <i>All Files</i>.
 
 			<p>
 			<table class="tg" align="center">
-				<caption>Table 1</caption>
 				<tbody>
 					<tr>
-						<th class="tg-bghc"></th>
-						<th class="tg-bghc">Added</th>
-						<th class="tg-bghc">Deleted</th>
-						<th class="tg-bghc">Edited</th>
-						<th class="tg-bghc">Used</th>
-						<th class="tg-bghc">Total</th>
+						<td class="tg-s6z2"></td>
+						<td class="tg-s6z2"><strong>Added</strong></td>
+						<td class="tg-s6z2"><strong>Deleted</strong></td>
+						<td class="tg-s6z2"><strong>Edited</strong></td>
+						<td class="tg-s6z2"><strong>Used</strong></td>
+						<td class="tg-s6z2"><strong>Total</strong></td>
 					</tr>
 					<tr>
-						<td class="tg-bghc">All Files</td>
-						<th class="tg-s6z2">6546</th>
-						<th class="tg-s6z2">34</th>
-						<th class="tg-s6z2">624</th>
-						<th class="tg-s6z2">193</th>
-						<th class="tg-s6z2">7397</th>
+						<td class="tg-s6z2"><strong>All Files</strong></td>
+						<td class="tg-s6z2"><strong>6546</strong></td>
+						<td class="tg-s6z2"><strong>34</strong></td>
+						<td class="tg-s6z2"><strong>624</strong></td>
+						<td class="tg-s6z2"><strong>193</strong></td>
+						<td class="tg-s6z2"><strong>7397</strong></td>
 					</tr>
 					<tr>
-						<td class="tg-bghc">% Files</td>
-						<th class="tg-s6z2">88,49 %</th>
-						<th class="tg-s6z2">0,45 %</th>
-						<th class="tg-s6z2">8,43 %</th>
-						<th class="tg-s6z2">2,60 %</th>
-						<th class="tg-s6z2">---</th>
+						<td class="tg-s6z2"><strong>% Files</strong></td>
+						<td class="tg-s6z2"><strong>88,49 %</strong></td>
+						<td class="tg-s6z2"><strong>0,45 %</strong></td>
+						<td class="tg-s6z2"><strong>8,43 %</strong></td>
+						<td class="tg-s6z2"><strong>2,60 %</strong></td>
+						<td class="tg-s6z2"><strong>---</strong></td>
 					</tr>
 					<tr>
-						<td class="tg-bghc">Files PHP / JS / HTML</td>
-						<th class="tg-s6z2">2031</th>
-						<th class="tg-s6z2">12</th>
-						<th class="tg-s6z2">471</th>
-						<th class="tg-s6z2">193</th>
-						<th class="tg-s6z2">2707</th>
+						<td class="tg-s6z2"><strong>Files PHP / JS / HTML</strong></td>
+						<td class="tg-s6z2"><strong>2031</strong></td>
+						<td class="tg-s6z2"><strong>12</strong></td>
+						<td class="tg-s6z2"><strong>471</strong></td>
+						<td class="tg-s6z2"><strong>193</strong></td>
+						<td class="tg-s6z2"><strong>2707</strong></td>
 					</tr>
 					<tr>
-						<td class="tg-bghc">% Files PHP / JS / HTML</td>
-						<th class="tg-s6z2">27,45 %</th>
-						<th class="tg-s6z2">0,16 %</th>
-						<th class="tg-s6z2">6,36 %</th>
-						<th class="tg-s6z2">2,60 %</th>
-						<th class="tg-s6z2">36,59 %</th>
+						<td class="tg-s6z2"><strong>% Files PHP / JS / HTML</strong></td>
+						<td class="tg-s6z2"><strong>27,45 %</strong></td>
+						<td class="tg-s6z2"><strong>0,16 %</strong></td>
+						<td class="tg-s6z2"><strong>6,36 %</strong></td>
+						<td class="tg-s6z2"><strong>2,60 %</strong></td>
+						<td class="tg-s6z2"><strong>36,59 %</strong></td>
 					</tr>					
 				</tbody>
 			</table>
+			<p align="center">
+			<caption><i>Table 5</i></caption>
 		</div>		
 		<div id="datacollection">
 			<p>
-			<h2>6. More Details</h2>
-			Next, we provide the data generated by our data collection proccess
-			for the 4 target applications.
-			<p>
-			<img src="./VAMOS/logo/total_plugin.png" align="center" height="200" width="300">
+			As a conclusion we summarize that to solve a vulnerability we need to add 55 files, modify another 5, and delete 1 file for every 217 files; all are approximate values. In the case of the modified we could say that would be used just slightly more than one file. If we make the same reflection but only attending to the extensions that concern us for our investigation, only those files witd PHP, JS and HTML extensions, reduce slightly the amounts of files that we would have to use. In this case 17 files would be added, 1 file would be modified for every 15 that the application contains and 1 file would be deleted for every 616 files. Only 1 out of 38 files would be used.
 			
-			Next, we provide the data generated by our data collection proccess
-			for the 4 target applications.
 			<p>
-			<img src="./VAMOS/logo/stars_plugin.png" align="center" height="200" width="300">
+			We could say that the effort to correct the vulnerability is not much if we consider that the developer who makes the correction is that gave rise to the application, which favors the recognition of the causes and origin of the vulnerability. On the other hand if the developer who makes the correction did not participate in its creation, although it has a lot of knowledge that has the language and WordPress has to make a greater effort and interact witd many files.
+			
+			<p>
+			<h2>6. More Details</h2>
+			Knowing that for WordPress there are more than 50 thousand plug-ins available and is widely used by the developer community, we set ourselves the task of identifying those plug-ins related to the registered vulnerabilities. For this process we once again covered the description of each vulnerability to indetify the plug-ins. We identified a total of 97 different plug-ins, which does not represent 1% of the total number of plug-ins known for WordPress.
 
-			Next, we provide the data generated by our data collection proccess
-			for the 4 target applications.
 			<p>
+			The low percentage of plug-ins related to the vulnerabilities registered in the NVD repository led to the search for more details and found that 17 of them were found on more than one occasion representing almost 18% of the total number of identified plug-ins. The other 80 plug-ins were only listed on one occasion witd one of the vulnerabilities (Figure 4).
+
+			<p align="center">
+			<img src="./VAMOS/logo/total_plugin.png" align="center" height="200" width="300">
+			<p align="center">
+			<caption><i>Figure 4</i></caption>
+			
+			<p>
+			We use the website WordPress.org to investigate the characteristics of the identified plug-ings. The referenced website offers various details about each plug-in. It offers details like: a description of the functionalities of each plug-in, the evaluations of all those users and developers evaluated them, installation instructions and version registration. The Figure 5 shows that over 50% of the identified plug-ins were evaluated witd 4 stars or more.
+			
+			<p align="center">
+			<th><img src="./VAMOS/logo/stars_plugin.png" align="center" height="200" width="300"></td>
+			<p align="center">
+			<caption><i>Figure 5</i></caption>
+
+			<p>
+			The <i>Figure 6</i> gives importance to our study taking into account that the 97 plug-ins found in the 119 different vulnerabilities were evaluated by 14,493 WordPress developers. More than 95% gave evaluations of four (4) or more stars to the detected plug-ins. On average each plug-in was evaluated by approximately 120 users.
+			<p align="center">
+			<th><img src="./VAMOS/logo/evaluators_plugin.png" align="center" height="200" width="300"></td>
+			<p align="center">
+			<caption><i>Figure 6</i></caption>
+			
+			<p>
+			Doing a study similar to the one of the plug-ins but this time with the files we could observe that in several occasions, some of the files are modified or revised in more than one opportunity. This time we decided to only count those files that were modified to solve the vulnerabilities identified, we are talking about the files that were made possible in the column <strong>Used</strong> of <i>Table 5</i>. Of the total of 193 files that intervened in the solution of the vulnerability we have to 10% of the files were repeated on more than one occasion (<i>Figure 7</i>).
+			
+			<p align="center">
 			<img src="./VAMOS/logo/total_file.png" align="center" height="200" width="300">
-
-			Next, we provide the data generated by our data collection proccess
-			for the 4 target applications.
+			<p align="center">
+			<caption><i>Figure 7</i></caption>
+			
 			<p>
-			<img src="./VAMOS/logo/evaluators_plugin.png" align="center" height="200" width="300">			
+			From the information offered by the previous figure and the study we can generate the following possible conclusions or new questions.
+			
+			<p>
+			<blockquote>
+				<li>First: the first time the file was modified, the proposed solution did not correctly resolve the vulnerability and triggered other patches and fixes.</li>
+				<li>Second: Modifying a vulnerability could have caused the existence of another vulnerability, in the same or another plug-in.</li>
+				<li>Third: During the process of fixing a vulnerability, developers can add or modify files that are not related to the vulnerability to be solved. This process can generate new vulnerabilities or prevent the proposed solution from being efficient.</li>
+				
+			</blockquote>
+
+			<p>
+			These variants for future work show that much remains to be explored in the world of vulnerabilities and even more to make the developers aware of the importance of watching for the occurrences of vulnerabilities in the applications that are generated to facilitate our day to day.
+			
 		</div>
 		<div id="fullpaper">
 			<h2>7. Full Paper</h2>
 
-			The full paper submitted to the 12th International Workshop on Variability
+			The full paper submitted to the 12td International Workshop on Variability
 			 Modelling of Software-Intensive Systems (VAMOS'18) can be downloaded <a
 				href="http://marxviana.github.io/VAMOS/files/VEM2017-paper.pdf">here</a>.
 			<p>
@@ -538,7 +600,7 @@ relação às vulnerabilidades introduzidas por plug-ins?</h2>
 				</li>
 				<p>
 				<li id="ssoares">S. Soares, E. Laureano, and P. Borba. <i>
-						Implementing distribution and persistence aspects with Aspectj. </i>
+						Implementing distribution and persistence aspects witd Aspectj. </i>
 					in ACM Sigplan Notices, 2002.
 				</li>
 				<p>
