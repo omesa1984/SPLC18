@@ -56,6 +56,8 @@
 			<li><a href="https://marxviana.github.io/vamos2018/index.html#concerns">Effort needed to correct vulnerability caused by wordpress plug-ins</a>. Presents the amount of necesary files to correct the vulnerabilities.</li>
 			<li><a
 				href="https://marxviana.github.io/vamos2018/index.html#datacollection">Data Collection</a>. Presents more details about the study.</li>
+			<li><a
+				href="https://marxviana.github.io/vamos2018/index.html#difficulties">Difficulties Encountered</a>.</li>	
 			<li><a href="https://marxviana.github.io/vamos2018/index.html#fullpaper">Full Paper</a>: presents the link to download a file witd the full text ofthis paper.</li>
 		</blockquote>
 
@@ -464,40 +466,40 @@ relação às vulnerabilidades introduzidas por plug-ins?</h2>
 						<td class="tg-s6z2"><strong>All Files</strong></td>
 						<td class="tg-s6z2"><strong>6630</strong></td>
 						<td class="tg-s6z2"><strong>37</strong></td>
-						<td class="tg-s6z2"><strong>712</strong></td>
-						<td class="tg-s6z2"><strong>247</strong></td>
-						<td class="tg-s6z2"><strong>7626</strong></td>
+						<td class="tg-s6z2"><strong>750</strong></td>
+						<td class="tg-s6z2"><strong>289</strong></td>
+						<td class="tg-s6z2"><strong>7706</strong></td>
 					</tr>
 					<tr>
 						<td class="tg-s6z2"><strong>% Files</strong></td>
-						<td class="tg-s6z2"><strong>86,93 %</strong></td>
+						<td class="tg-s6z2"><strong>86,03 %</strong></td>
 						<td class="tg-s6z2"><strong>0,48 %</strong></td>
-						<td class="tg-s6z2"><strong>9,33 %</strong></td>
-						<td class="tg-s6z2"><strong>3,23 %</strong></td>
+						<td class="tg-s6z2"><strong>9,73 %</strong></td>
+						<td class="tg-s6z2"><strong>3,75 %</strong></td>
 						<td class="tg-s6z2"><strong>---</strong></td>
 					</tr>
 					<tr>
 						<td class="tg-s6z2"><strong>Files PHP / JS / HTML</strong></td>
 						<td class="tg-s6z2"><strong>2103</strong></td>
 						<td class="tg-s6z2"><strong>13</strong></td>
-						<td class="tg-s6z2"><strong>544</strong></td>
-						<td class="tg-s6z2"><strong>247</strong></td>
-						<td class="tg-s6z2"><strong>2907</strong></td>
+						<td class="tg-s6z2"><strong>584</strong></td>
+						<td class="tg-s6z2"><strong>287</strong></td>
+						<td class="tg-s6z2"><strong>2987</strong></td>
 					</tr>
 					<tr>
 						<td class="tg-s6z2"><strong>% Files PHP / JS / HTML</strong></td>
-						<td class="tg-s6z2"><strong>27,57 %</strong></td>
-						<td class="tg-s6z2"><strong>0,17 %</strong></td>
-						<td class="tg-s6z2"><strong>7,13 %</strong></td>
-						<td class="tg-s6z2"><strong>3,23 %</strong></td>
-						<td class="tg-s6z2"><strong>38,11 %</strong></td>
+						<td class="tg-s6z2"><strong>27,29 %</strong></td>
+						<td class="tg-s6z2"><strong>0,16 %</strong></td>
+						<td class="tg-s6z2"><strong>7,57 %</strong></td>
+						<td class="tg-s6z2"><strong>3,72 %</strong></td>
+						<td class="tg-s6z2"><strong>38,76 %</strong></td>
 					</tr>					
 				</tbody>
 			</table>
 			<p align="center">
 			<caption><i>Table 5</i></caption>
 			<p>
-			As a conclusion we summarize that to solve a vulnerability we need to add 47 files, modify another 5, and delete 1 file for every 206 files; all are approximate values. In the case of the modified we could say that approximately 3 files would be used per vulnerability. If we make the same reflection but only attending to the extensions that concern us for our investigation, only those files witd PHP, JS and HTML extensions, reduce slightly the amounts of files that we would have to use. In this case 15 files would be added, 1 file would be modified for every 14 that the application contains and 1 file would be deleted for every 586 files. Only 1 out of 30 files would be used.
+			As a conclusion we summarize that to solve a vulnerability we need to add 47 files, modify another 5, and delete 1 file for every 208 files; all are approximate values. In the case of the modified we could say that approximately 2 files would be used per vulnerability. If we make the same reflection but only attending to the extensions that concern us for our investigation, only those files witd PHP, JS and HTML extensions, reduce slightly the amounts of files that we would have to use. In this case 15 files would be added, 1 file would be modified for every 13 that the application contains and 1 file would be deleted for every 592 files. Only 1 out of 26 files would be used.
 			
 			<p>
 			We could say that the effort to correct the vulnerability is not much if we consider that the developer who makes the correction is that gave rise to the application, which favors the recognition of the causes and origin of the vulnerability. On the other hand if the developer who makes the correction did not participate in its creation, although it has a lot of knowledge that has the language and WordPress has to make a greater effort and interact witd many files.			
@@ -553,8 +555,128 @@ relação às vulnerabilidades introduzidas por plug-ins?</h2>
 			These variants for future work show that much remains to be explored in the world of vulnerabilities and even more to make the developers aware of the importance of watching for the occurrences of vulnerabilities in the applications that are generated to facilitate our day to day.
 			
 		</div>
+		<div id="difficulties">
+			<h2>7. Difficulties Encountered</h2>
+			
+			<p>
+			During the study realized in the NVD repository we find several difficulties that hinder our study, difficulties caused by the lack of data and we will describe in this section.
+			
+			<p>
+			At first we find 2 vulnerabilities that do not present classification of the group of vulnerabilities to which they belong, and nor do they offer indications for the search, interpretation or identification of the same. We searched in Internet used the identifier of each vulnerability, trying to identify other repositories that will facilitate the process, but all the repositories found report the same information and in some cases less information. The vulnerabilities in this case are:
+			
+			<blockquote>
+				<li>CVE-2013-2204</li>
+				<li>CVE-2012-4422</li>
+			</blockquote>
+			
+			<p>
+			Other difficulties encountered were those vulnerabilities that do not make references to the plugins that were originated. Some of them offer several data but if any indicates the files that have to be modified, it must be very common files between the various plugins or own of WordPres and not of the plugins. In this case we find the vulnerabilities:
+			
+			<blockquote>
+				<li>CVE-2016-6896</li>
+				<li>CVE-2012-4422</li>
+				<li>CVE-2012-2402</li>
+				<li>CVE-2006-5705</li>
+			</blockquote>
+			
+			<p>
+			We find a larger group of vulnerabilities that do not provide data about how they should be corrected, what correction to make or patch to use. Whenever we did an internet search for a possible solution for these vulnerabilities we ended up circling between a different links that were showed in the pages found <i>Table 6</i>.
+			
+			<p>
+			<table class="tg" align="center">
+				<tr>
+					<td class="tg-s6z2"><strong>Vulnerability</stro></td>
+					<td class="tg-s6z2"><strong>Gravity</strong></td>
+					<td class="tg-s6z2"><strong>Last Update</strong></td>
+					<td class="tg-s6z2"><strong>Type</strong></td>
+					<td class="tg-s6z2"><strong>Plug-in</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2016-6896</stro></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>02/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>Dir. Trav.</strong></td>
+					<td class="tg-s6z2"><strong>---</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2009-2334</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>18/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>XSS</strong></td>
+					<td class="tg-s6z2"><strong>+5</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2013-7240</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>25/Feb/2014</strong></td>
+					<td class="tg-s6z2"><strong>Dir. Trav.</strong></td>
+					<td class="tg-s6z2"><strong>Advanced Dewplayer</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-4625</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>28/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>SQL Injection</strong></td>
+					<td class="tg-s6z2"><strong>Newsletter</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-0618</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>05/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>XSS</strong></td>
+					<td class="tg-s6z2"><strong>+2</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-0617</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>28/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>XSS</strong></td>
+					<td class="tg-s6z2"><strong>---</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-0616</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>28/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>SQL Injection</strong></td>
+					<td class="tg-s6z2"><strong>---</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-0615</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>28/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>Dir. Trav.</strong></td>
+					<td class="tg-s6z2"><strong>---<strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-0491</strong></td>
+					<td class="tg-s6z2"><strong>High</strong></td>
+					<td class="tg-s6z2"><strong>28/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>SQL Injection</strong></td>
+					<td class="tg-s6z2"><strong>FooGallery</strong></td>
+				</tr>
+				<tr>
+					<td class="tg-s6z2"><strong>CVE-2008-0198</strong></td>
+					<td class="tg-s6z2"><strong>Medium</strong></td>
+					<td class="tg-s6z2"><strong>05/Sept/2017</strong></td>
+					<td class="tg-s6z2"><strong>CSRF</strong></td>
+					<td class="tg-s6z2"><strong>---</strong></td>
+				</tr>
+			</table>
+			
+			<p align="center">
+			<caption><i>Table 6</i></caption>
+			
+			<p>
+			As a curiosity we observed that the 7 vulnerabilities caused by the use of the plugins that were registered in 2008 are in this group of vulnerabilities that do not show solution; the 5 of these vulnerabilities shows updated information during the last month of September 2017, which indicates that the community is working on the solution of these vulnerabilities. The 5 of them have <strong>Medium</strong> severity level and the other 2 level of <str>High</strong> gravity, were identified as <strong>SQL Injection</strong> and are associated with the <strong><i>FooGallery</i></strong> and <strong><i>Newsletter</i></strong> plugins.
+			
+			<p>
+			In the <i>Table 6</i> we show that the vulnerability </strong>CVE-2009-2334</strong> is shown when combining the plugins <strong><i>Collapsing Archives, Akismet, Related Ways to Take Action, Acunetix Secure WordPress and Acunetix WP Security</i></strong>. On the other hand all the variables indicate that the vulnerability <strong>CVE-2008-0618</strong> can be produced by any of the plugins <strong><i>Gwolle Guestbook or Rizzi Guestbook</i></strong>.
+			
+			<p>
+			We detected 2 vulnerabilities produced not by the use of a plugin but by the elimination of some of them. In these cases, the vulnerabilities also offer no indication of which plugin can cause these disasters to be eliminated. The vulnerability <strong>CVE-2010-5295</strong> was only necessary to modify 1 file but in the vulnerability <strong>CVE-2017-6816</strong> was necessary to modify 49 files to correct the vulnerability caused by deleting the plugin or plugins
+		</div>
 		<div id="fullpaper">
-			<h2>7. Full Paper</h2>
+			<h2>8. Full Paper</h2>
 			
 			<p>
 			The excel file has all information used for this website and paper submitted to the 12td International Workshop on Variability Modelling of Software-Intensive Systems (VAMOS'18) can be visited <a href="./VAMOS/files/NVD_WP.xlsx">here</a>.
