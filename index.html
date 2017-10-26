@@ -28,7 +28,7 @@
 
 
 
-	<h1>Can Plug-ins Impact the Appearance of Vulnerabilities? An Exploratory Study of the Word Press</h1>
+	<h1>Understanding Plugin-based Web Systems Vulnerabilities: An Exploratory Study of the WordPress</h1>
 
 	<p>
 		<strong>Authors:</strong>Oslien Mesa, Marx Viana, Elder Cirilo, Vinicius, ..., Carlos Lucena
@@ -39,7 +39,7 @@
 	<div>
 		This web page presents the supplementary material of the paper <i>Identifying
 			the types of vulnerabilities that can be explode by  attackers</i>, which
-		has been submitted to the 12td International Workshop on Variability Modelling 
+		has been submitted to the 12th International Workshop on Variability Modelling 
 		of Software-Intensive Systems(VAMOS'18). Complementary information regarding
 		the paper is divided among the sections following:
 	</div>
@@ -47,18 +47,18 @@
 	<ol>
 		<blockquote>
 			<li><a href="https://marxviana.github.io/vamos2018/index.html#smells">
-			Types of Vulnerabilities</a>. Presents the list of types of vulnerabilities and
+			Types of Vulnerabilities</a>. Presents the list of vulnerabilities types and
 				their description.</li>
 			<li><a
-				href="https://marxviana.github.io/vamos2018/index.html#applications">Most frequent Vulnerabilities caused by plug-ins in WordPress</a>. Presents the amount of vulnerabilities found during the study.</li>
-			<li><a href="https://marxviana.github.io/vamos2018/index.html#gravity">Gravity of Vulnerabilities caused by plugins in WordPress</a>Presents the vulnerabilities evaluation and the severity of them. </li>
-			<li><a href="https://marxviana.github.io/vamos2018/index.html#feeling">Ainda em Portugues</a></li>
-			<li><a href="https://marxviana.github.io/vamos2018/index.html#concerns">Effort needed to correct vulnerability caused by wordpress plug-ins</a>. Presents the amount of necesary files to correct the vulnerabilities.</li>
+				href="https://marxviana.github.io/vamos2018/index.html#applications">Most frequent Vulnerabilities caused by WordPress plug-ins</a>. Presents the amount of vulnerabilities found during the study.</li>
+			<li><a href="https://marxviana.github.io/vamos2018/index.html#gravity">Severity of Vulnerabilities caused by WordPress plug-ins</a>Presents the vulnerabilities evaluation and the severity of them. </li>
+			<li><a href="https://marxviana.github.io/vamos2018/index.html#feeling">Ainda em Portugues??? ()</a></li>
+			<li><a href="https://marxviana.github.io/vamos2018/index.html#concerns">Effort needed to correct vulnerability caused by WordPress plug-ins</a>. Presents the amount of necesary files to correct the vulnerabilities.</li>
 			<li><a
 				href="https://marxviana.github.io/vamos2018/index.html#datacollection">Data Collection</a>. Presents more details about the study.</li>
 			<li><a
-				href="https://marxviana.github.io/vamos2018/index.html#difficulties">Difficulties Encountered</a>. Some difficulties encountered in the NVD repository</li>	
-			<li><a href="https://marxviana.github.io/vamos2018/index.html#fullpaper">Full Paper</a>: presents the link to download a file witd the full text ofthis paper.</li>
+				href="https://marxviana.github.io/vamos2018/index.html#difficulties">Difficulties Encountered</a>. Some difficulties encountered during the research</li>	
+			<li><a href="https://marxviana.github.io/vamos2018/index.html#fullpaper">Full Paper</a>: presents the link to download a file with the full text of this paper.</li>
 		</blockquote>
 
 	</ol>
@@ -79,34 +79,61 @@
 		</p>
 		<div class="questions">
 			<blockquote>
-				<li><strong> XSS (Cross-site Scripting): </strong> the attacker manages to hide malicious code from users, making it look like application components, and wait for user activation to execute</li>
+				<li><strong> XSS (Cross-site Scripting): </strong> the attacker manages to 
+				hide a malicious code from users, making it look like application components, 
+				and waits for user activation to execute it;</li>
 					
-				<li><strong> SQL Injection: </strong> the attacker takes advantage of the lack of data validation and execute SQL queries from the components client's writing</li>
+				<li><strong> SQL Injection: </strong> the attacker takes advantage of the 
+				lack of data validation and execute SQL queries from the client's writing components</li>
 				
-				<li><strong> Directory traversal: </strong> witd the existence of a correct code takes advantage of the lack of security (or validation) in the permissions of the roles of users</li>
+				<li><strong> Directory traversal: </strong> it allows attackers to access 
+				restricted directories and execute commands outside of the web server’s root directory</li>
 				
-				<li><strong> CSRF (Cross-site Request Forgery): </strong> the attackers abuses the trust of website on the users and use the permissions of them for the attack</li>
+				<li><strong> CSRF (Cross-site Request Forgery): </strong> the attackers abuse
+				 the trust of the users on the website and use their permission for the attack</li>
 				
-				<li><strong> Bypass: </strong> the attacker takes advantage of alternate access patd by the developers or flaws in the design of the website</li>
+				<li><strong> Bypass: </strong>the attacker takes advantage of an alternate 
+				access path left in place by developers, or flaws in the website design</li>
 				
-				<li><strong> Parameter Remote File (PRF): </strong> occurs when the website allows the execute written codes in uploaded files, or stored in shared paths witd website</li>
+				<li><strong> Parameter Remote File (PRF): </strong> REFAZER</li>
 				
-				<li><strong> Open redirect: </strong> it allows the attackers to redirect users to arbitrary websites while execute phishing attacks</li>
+				<li><strong> Open Redirect: </strong> it allows the attackers to redirect 
+				users to arbitrary websites while executing phishing attacks</li>
 				
-				<li><strong> Video Embed & Thumbnail Generator (VETG): </strong> it allows the attackers to execute arbitrary commands through unspecified vectors</li>
+				<li><strong> Video Embed & Thumbnail Generator (VETG): </strong> it allows the attackers to
+				 execute arbitrary commands through unspecified vectors</li>
 				
-				<li><strong>  Information Disclosure (Inf. Disc.): </strong> it allows attackers to obtain configuration information through a direct request to the configuration file</li>
+				<li><strong>  Information Disclosure (Inf. Disc.): </strong> it allows attackers 
+				to obtain information on the configuration through a direct request to the configuration file</li>
 				
-				<li><strong>  Multiple Unspecified Vulnerabilities (MUV): </strong> these are vulnerabilities of multiple and unspecified impact</li>
+				<li><strong>  Multiple Unspecified Vulnerabilities (MUV): </strong> these are
+				 vulnerabilities of multiple and unspecified impact</li>
 				
 			</blockquote>						
 		</div>
 		<p>
-		The types of vulnerabilities were identified by the description that each one presents in theNational Vulnerability Database (NVD) repository, the text is necessary for the description of the vulnerability and your registration in the repository. The most comprehensive descriptions mention the type of vulnerability, the plug-in where the vulnerability is located and even the files in which it was necessary to perform some operation to correct the vulnerability. In all the descriptions they identify the plug-ins where the vulnerability is presented, it is necesary data for our study and in which we will cover later. The poorer descriptions are limited to naming the plug-in, which is why we need to identify the vulnerability by the interpretation the text and parallel research in the bibliography related to the terms.
+		The types of vulnerabilities were identified by the description that each one presents 
+		in the National Vulnerability Database (NVD) repository. The text is necessary to 
+		the description of the vulnerability and your registration in the repository. 
+		The most comprehensive descriptions mention the type of vulnerability, 
+		the plug-in where the vulnerability is located and even the files in which it was 
+		necessary to perform some operation to correct the vulnerability. 
+		In all the descriptions they identify the plug-ins where the vulnerability is presented,
+		 it is necesary data for our study and in which we will cover later. The poorer descriptions 
+		 are limited to naming the plug-in, which is why we need to identify the vulnerability 
+		 by the interpretation the text and parallel research in the bibliography related to the terms.
 
 		<div id="applications">
-			<h2>2. Most frequent Vulnerabilities caused by plug-ins in WordPress</h2>
-			<p>After make a study by the vulnerabilities registered; we identify, group and account the vulnerabilities by type. We counted and studied 139 vulnerabilities, which we identified and defined briefly in the previous section. Untill the date, the most commonly reported vulnerabilities are of type XSS. Were registred 76 vulnerabilities, it is represented more than 50% of registered vulnerabilities. The second most frequent vulnerability is the SQL Injection, a total of 24 representing just over 15%. The rest of types of vulnerabilities have a lower frequency of occurrence, does not reach 10% of occurrence but this does not detract from either importance or relevance because these characteristics depend on the severity of their impact and not on their frequency of occurrence.
+			<h2>2. Most frequent Vulnerabilities caused by WordPress plug-ins</h2>
+			<p>After make a study by the vulnerabilities registered; we identify, 
+			group and account the vulnerabilities by type. We counted and studied 139 
+			vulnerabilities, which we identified and defined briefly in the previous section. 
+			Untill the date, the most commonly reported vulnerabilities are of type XSS. 
+			Were registred 76 vulnerabilities, it is represented more than 50% of registered vulnerabilities. 
+			The second most frequent vulnerability is the SQL Injection, a total of 24 representing just over 15%. 
+			The rest of types of vulnerabilities have a lower frequency of occurrence, does not reach 10% of 
+			occurrence but this does not detract from either importance or relevance because these characteristics 
+			depend on the severity of their impact and not on their frequency of occurrence.
 			
 			<p>
 			<table align="center">
@@ -186,13 +213,17 @@
 				</td>
 			</table>
 		<p align="center">
-			The <i>Figure 1</i> and the <i>Table 1</i> showed the frequency of occurrence for each vulnerability.
+			The <i>Figure 1</i> and the <i>Table 1</i> show the frequency of occurrence for each vulnerability.
 		
 		<div id="gravity">
-			<h2>3. Gravity of Vulnerabilities caused by plugins in WordPress</h2>
+			<h2>3. Severity of Vulnerabilities caused by WordPress plug-ins</h2>
 
 			<p>
-				After identifying the different types of vulnerabilities registered in the NVD repository, we decided to find which one has the greatest impact on the integrity of the application by add of the plug-in. For the registry of each vulnerability in the NVD repository, the fields shown in <i>Table 2</i> are completed. These fields were used as metrics for vulnerability assessment:
+				After identifying the different types of vulnerabilities registered in the NVD repository,
+				 we decided to find which one has the greatest impact on the integrity of the application 
+				 by add of the plug-in. For the registry of each vulnerability in the NVD repository,
+				  the fields shown in <i>Table 2</i> are completed.
+				   These fields were used as metrics for vulnerability assessment:
 				
 			<p>
 		<div>
@@ -271,10 +302,20 @@
 			</blockquote>						
 		</div>
 		<p>
-		The repository shows CVSS severity versions 2.0 and 3.0 vulnerability assessments. All the vulnerabilities present the evaluations by the metrics of the Version 2.0, and all those that were registered from the year 2017 are evaluated in addition by the Version 3.0. In many cases the quantitative results shown by the metrics show slight variations and in other cases the differences are greater. While qualitative assessments are different in many occasions. We understand that these variations are a result of the optimization in the applied metrics, the addition of new metrics or the division of some metrics in the version change.
+		The repository shows CVSS severity versions 2.0 and 3.0 vulnerability assessments. 
+		All the vulnerabilities present the evaluations by the metrics of the Version 2.0, 
+		and all those that were registered from the year 2017 are evaluated in addition by the 
+		Version 3.0. In many cases the quantitative results shown by the metrics show slight 
+		variations and in other cases the differences are greater. While qualitative assessments 
+		are different in many occasions. We understand that these variations are a result of 
+		the optimization in the applied metrics, the addition of new metrics or the division 
+		of some metrics in the version change.
 		
 		<p>
-		As expected, we found a great variety in the Base Score field, some as low as CVE-2013-4954 and CVE-2012-6527 that were evaluated by Low witd a value of 2.6, botd vulnerabilities are type XSS. We found the vulnerability CVE-2012-3576 that has the maximum Base Score of 10.0 and was evaluated from High and is PRF type. Most of the vulnerabilities were evaluated from Medium <i>(Table 3 and Figure 2)</i>
+		As expected, we found a great variety in the Base Score field, some as low as CVE-2013-4954 
+		and CVE-2012-6527 that were evaluated by Low witd a value of 2.6, botd vulnerabilities are type XSS.
+		 We found the vulnerability CVE-2012-3576 that has the maximum Base Score of 10.0 and was evaluated from 
+		 High and is PRF type. Most of the vulnerabilities were evaluated from Medium <i>(Table 3 and Figure 2)</i>
 		
 		<blockquote>
 		<table align="center">
@@ -315,21 +356,35 @@
 			</td>
 		</table>
 		<p align="center">
-		<i>Table 3 and Figure 2. The Figure 2 shows the percentages of the vulnerabilities grouped by the evaluation of the Base Score field, while Table 3 shows the amounts.</i>
+		<i>Table 3 and Figure 2. Figure 2 shows the percentages of the vulnerabilities grouped 
+		by the evaluation of the Base Score field, while Table 3 shows the amounts.</i>
 
 		</blockquote>
 				
 		<p>
-		Until this moment we appreciate that not being to find a vulnerability of little occurrence this must be ignored. The <i>Figure 3</i> shows how the <i>MUV</i> vulnerability has a single occurrence in the research carried out but was evaluated high, so that it has a high Score average, until this time the highest average.		
+		Until this moment we appreciate that not being to find a vulnerability of little 
+		occurrence this must be ignored. The <i>Figure 3</i> shows how the <i>MUV</i> vulnerability 
+		has a single occurrence in the research carried out but was evaluated high, so that 
+		it has a high Score average, until this time the highest average.		
 						
 		<p>
-		Of the ten (10) types of vulnerabilities identified, three (3) of them have a high average impact on application integrity, caused by the addition of a plug-in. <i>MUV, PRF, and SQL Injection</i> vulnerabilities maintain a <strong>Score</strong> average of <strong>7.0</strong> or higher; this leads to a wake-up call for developers to take care of the appearance of these vulnerabilities in their applications.
+		Of the ten (10) types of vulnerabilities identified, three (3) of them have a high 
+		average impact on application integrity, caused by the addition of a plug-in. <i>MUV, 
+		PRF, and SQL Injection</i> vulnerabilities maintain a <strong>Score</strong> average 
+		of <strong>7.0</strong> or higher; this leads to a wake-up call for developers to take 
+		care of the appearance of these vulnerabilities in their applications.
 		
 		<p>
-		For to calculate the average of the Score of the types of vulnerabilities, when we found the Score of CVSS 3.0 we despise the Score obtained of CVSS 2.0.
+		For to calculate the average of the Score of the types of vulnerabilities, when we 
+		found the Score of CVSS 3.0 we despise the Score obtained of CVSS 2.0.
 		
 		<p>
-		We must emphasize that the type of vulnerability <i>XSS</i>, which has the highest frequency of occurrence, and is the lowest vulnerability. Its <strong>Score</strong> values are very stable and are evaluated from <strong>Medium</strong>, and on a few occasions from <strong>Low</strong>. The problem of vulnerabilities of type <i>XSS</i> is that they are very frequent, reason for they are the most looked for to realize the attacks. Its high frequency of appearance leads to constant care by the developers <i>Figure 3</i>.
+		We must emphasize that the type of vulnerability <i>XSS</i>, which has the highest 
+		frequency of occurrence, and is the lowest vulnerability. Its <strong>Score</strong>
+		 values are very stable and are evaluated from <strong>Medium</strong>, and on a few occasions 
+		 from <strong>Low</strong>. The problem of vulnerabilities of type <i>XSS</i> is that they are very 
+		 frequent, reason for they are the most looked for to realize the attacks. Its high frequency of appearance 
+		 leads to constant care by the developers <i>Figure 3</i>.
 		
 		<p align="center">
 			<img src="./VAMOS/logo/media_vulne.PNG" align="center" height="400" width="500">
@@ -337,7 +392,10 @@
 			<caption><i>Figure 3</i></caption>
 		
 		<p>
-			To take a deeper approach to our study we decided to use the metrics related to our objective as indicated by the names and descriptions of each one. We had and in our favor consideration that may have been optimized during the change of version from CVSS 2.0 to CVSS 3.0, but were not restructured.
+			To take a deeper approach to our study we decided to use the metrics related to
+			 our objective as indicated by the names and descriptions of each one. We had and 
+			 in our favor consideration that may have been optimized during the change of version
+			  from CVSS 2.0 to CVSS 3.0, but were not restructured.
 			
 		<p>
 		<blockquote>
@@ -348,13 +406,28 @@
 		</blockquote>
 		
 		<p>
-		Of the 139 vulnerability descriptions analyzed, we observed  that in only 14 was evaluate as <strong>None</strong>, they are not significant compromise of the integrity of the web application. While in 9 the affectation was classified as <strong>Low</strong>. For the most part the developers reported the possibility of unrestricted access to some files or certain information of the web application, but in these cases the scope of what the attackers was assessed limited. Finally, we observed in 4 of the vulnerabilities severely compromised <strong>(High)</strong> the application while another 1 <strong>Completely</strong> compromised the integrity of the application.
+		Of the 139 vulnerability descriptions analyzed, we observed  that in only 14 was evaluate
+		 as <strong>None</strong>, they are not significant compromise of the integrity of the web 
+		 application. While in 9 the affectation was classified as <strong>Low</strong>. For the most 
+		 part the developers reported the possibility of unrestricted access to some files or certain 
+		 information of the web application, but in these cases the scope of what the attackers was assessed 
+		 limited. Finally, we observed in 4 of the vulnerabilities severely compromised <strong>(High)</strong> 
+		 the application while another 1 <strong>Completely</strong> compromised the integrity of the application.
 		
 		<p>
-		Analyzing the impact of the vulnerabilities in the availability of web applications, we observed that in only 3 of the 139, that the developers considered the possibility of a compromise in the performance or <strong>High</strong> interruption in the available resources. Again we have 1 that compromises the resources of the application in its entirety. Of the remaining only 40 have a <strong>Partial</strong> risk of the resources of the applications, the rest does not presents risks.
+		Analyzing the impact of the vulnerabilities in the availability of web applications, 
+		we observed that in only 3 of the 139, that the developers considered the possibility of 
+		a compromise in the performance or <strong>High</strong> interruption in the available resources.
+		 Again we have 1 that compromises the resources of the application in its entirety. Of the remaining 
+		 only 40 have a <strong>Partial</strong> risk of the resources of the applications, the rest does not presents risks.
 		
 		<p>
-		We analyze the field describing the complexity of the attack that must be performed to exploit the identified vulnerabilities without taking into account the attacker's experience. In this metric we noticed that in 1 of the vulnerabilities the complexity of the attack to be carried out is very low (<strong>None</strong>) and another 61 were evaluated from <strong>Low</strong>. We find 2 vulnerabilities that need a <strong>High</strong> level of knowledge of the atancante, while the rest were evaluated <strong>Medium</strong>.
+		We analyze the field describing the complexity of the attack that must be performed to exploit the 
+		identified vulnerabilities without taking into account the attacker's experience. In this metric 
+		we noticed that in 1 of the vulnerabilities the complexity of the attack to be carried out is 
+		very low (<strong>None</strong>) and another 61 were evaluated from <strong>Low</strong>. We 
+		find 2 vulnerabilities that need a <strong>High</strong> level of knowledge of the atancante, 
+		while the rest were evaluated <strong>Medium</strong>.
 		
 		<blockquote>
 		<table class="tg" align="center">
@@ -443,13 +516,27 @@ relação às vulnerabilidades introduzidas por plug-ins?</h2>
 
 		</div>
 		<div id="concerns">
-			<h2>5. Effort needed to correct vulnerability caused by wordpress plug-ins</h2>
+			<h2>5. Effort needed to correct vulnerability caused by WordPress plug-ins</h2>
 
 			<p>
-			In another of the metrics we have an idea of the effort that the developers must make to solve a vulnerability caused by the addition of a plug-ins. To solve the 139 vulnerabilities studied it was necessary to work witd a total of 7626 as reflected in <i>Table 5</i>. The <i>Table 5</i> shows the total number of files that needed to be <strong>Added</strong>, <strong>Deleted</strong> or <strong>Edited</strong> to resolve the vulnerability. The column <strong>Used</strong> is associated only to the <strong>Edited</strong> column, since in the cases of the modified files the repository shows the modifications that were made. As you can see in the column <strong>Used</strong> only those files related directly to the vulnerability correction were counted.
+			In another of the metrics we have an idea of the effort that the developers must 
+			make to solve a vulnerability caused by the addition of a plug-ins. To solve the
+			 139 vulnerabilities studied it was necessary to work witd a total of 7626 as 
+			 reflected in <i>Table 5</i>. The <i>Table 5</i> shows the total number of files 
+			 that needed to be <strong>Added</strong>, <strong>Deleted</strong> or <strong>Edited</strong> to 
+			 resolve the vulnerability. The column <strong>Used</strong> is associated only to the <strong>Edited</strong> column, 
+			 since in the cases of the modified files the repository shows the modifications that were made. 
+			 As you can see in the column <strong>Used</strong> only those files related directly to the vulnerability correction were counted.
 			
 			<p>
-			As our study is aimed at the vulnerabilities produced by the addition of WordPress plug-ins, in a file containing <i>PHP</i> codes, we independently count the files with <i>PHP</i>, <i>JS</i> and <i>HTML</i> extension that were used in the correction process. During the process of counting and filtering of the files by extension we group all the possible files of extensions <i>JS and JSP</i> in a group of files <i>JS</i>; and the <i>HTA, HTM, HTML, XML, MHT and MHTML</i> extension files are grouped into the <i>HTML</i> group. All percent data shown in <i>Table 5</i> were calculated using as one hundred percent, the total of <i>All Files</i>.
+			As our study is aimed at the vulnerabilities produced by the addition of WordPress 
+			plug-ins, in a file containing <i>PHP</i> codes, we independently count the files 
+			with <i>PHP</i>, <i>JS</i> and <i>HTML</i> extension that were used in the correction 
+			process. During the process of counting and filtering of the files by extension we group 
+			all the possible files of extensions <i>JS and JSP</i> in a group of files <i>JS</i>; 
+			and the <i>HTA, HTM, HTML, XML, MHT and MHTML</i> extension files are grouped into 
+			the <i>HTML</i> group. All percent data shown in <i>Table 5</i> were calculated using 
+			as one hundred percent, the total of <i>All Files</i>.
 
 			<p>
 			<table class="tg" align="center">
